@@ -16,6 +16,6 @@ run the test.py
 ```Python
 python test.py
 ```
-# 5.modules.py
+# 5.models.py
 - 这是图像分类构建的分类模型
 - 大家可以把自己的模型放入此处并调用
