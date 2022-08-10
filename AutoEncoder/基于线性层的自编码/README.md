@@ -1,4 +1,4 @@
-# 1.modules.py
+# 1.models.py
 - 包含了线性自编码器模型
 
 # 2.train.py
