@@ -148,9 +148,9 @@ if __name__ == "__main__":
                                                time.time() - epoch_start_time,
                                                accu_val))
         print('-' * 59)
-        print('Checking the results of test dataset.')
-        accu_test = evaluate(test_dataloader, criterion)
-        print('test accuracy {:8.3f}'.format(accu_test))
+    print('Checking the results of test dataset.')
+    accu_test = evaluate(test_dataloader, criterion)
+    print('test accuracy {:8.3f}'.format(accu_test))
 
     '''
     5.save the model
