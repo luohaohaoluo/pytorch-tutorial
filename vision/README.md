@@ -9,7 +9,7 @@
 - **实例分割：Instance Segmentation**
 
 ### 概念与定义
-![区别图.jpg](https://github.com/luo-hao-striver/my-pytorch-tutorial/blob/main/docs/imgs/%E5%8C%BA%E5%88%AB%E5%9B%BE.jpg)
+![关系图.jpg](https://github.com/luo-hao-striver/my-pytorch-tutorial/blob/main/docs/imgs/%E5%85%B3%E7%B3%BB%E5%9B%BE.jpg)
 上图展示了四种任务的研究目标，如下
 - 图像分类：判别图中物体是什么，例如是猫还是狗
 - 语义分割：对图像进行像素级分类，预测每个像素属于的类别，不区分个体
