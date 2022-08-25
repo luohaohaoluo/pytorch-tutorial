@@ -1,9 +1,7 @@
 # 图像分类
 file structure
-/*
-  -- dataset: dataset floder of the task 
-  -- code: all program in here
-*/
+- dataset: dataset floder of the task 
+- code: all program in here
 
 # 1.数据集种类
 - 本次图像分类使用的数据集是FashionMNIST
