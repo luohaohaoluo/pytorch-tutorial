@@ -1,5 +1,5 @@
 import torch.nn as nn
-from torchvision.models import vgg19_bn, vgg19,resnet50
+from torchvision.models import vgg19_bn, vgg19, resnet50
 from torchsummary import summary
 
 
@@ -8,7 +8,8 @@ class FCN_Vgg_8s(nn.Module):
         super().__init__()
 
         self.num_classes = num_classes
-        model_vgg19 = vgg19(pretrained=True)
+        # pre-model with batch-normalization
+        model_vgg19 = vgg19_bn(pretrained=True)
 
         # model_vgg19 = vgg19_bn(pretrained=True)
         self.backbone = model_vgg19.features
@@ -31,8 +32,8 @@ class FCN_Vgg_8s(nn.Module):
         self.bn5 = nn.BatchNorm2d(32)
         self.classifier = nn.Conv2d(32, num_classes, kernel_size=1)
 
-        self.layers = {"4": "maxpool_1", "9": "maxpool_2", "18": "maxpool_3",
-                       "27": "maxpool_4", "36": "maxpool_5"}
+        self.layers = {"6": "maxpool_1", "13": "maxpool_2", "26": "maxpool_3",
+                       "39": "maxpool_4", "52": "maxpool_5"}
 
     def forward(self, x):
         output = {}
@@ -42,12 +43,10 @@ class FCN_Vgg_8s(nn.Module):
                 output[self.layers[name]] = x
         x5 = output["maxpool_5"]
         x4 = output["maxpool_4"]
-        # print(x4.shape)
         x3 = output["maxpool_3"]
 
         score = self.relu(self.de_conv1(x5))
-        # 如果使用带BN的, x4.shape=[4, 512, 40, 60], score.shape=[4, 512, 80, 120]
-        score = self.bn1(score + x4)
+        score = self.bn1(score)
         score = self.relu(self.de_conv2(score))
         score = self.bn2(score + x3)
         score = self.bn3(self.relu(self.de_conv3(score)))
@@ -58,10 +57,8 @@ class FCN_Vgg_8s(nn.Module):
 
 
 if __name__ == "__main__":
-
-    model = FCN_Vgg_8s(21)
-    # print(model.backbone)
+    model = FCN_Vgg_8s(21).to('cuda')
     summary(model, input_size=(3, 320, 480))
-    # model = resnet50(pretrained=True)
-    # print(model)
+
+
 
