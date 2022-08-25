@@ -19,6 +19,7 @@
 - 运行test.py
 
 # 5. 总结
+### nn.CrossEntropyLoss 和 nn.NLLLoss的区别
 ```python
 loss = nn.CrossEntropyLoss()
 input = torch.randn((2, 3, 5, 5))
