@@ -6,8 +6,6 @@ class TextClassificationModel(nn.Module):
     def __init__(self, vocab_size, embed_dim, num_class):
         super(TextClassificationModel, self).__init__()
         self.embedding = nn.EmbeddingBag(vocab_size, embed_dim, sparse=True)
-#         self.lstm = nn.LSTM(embed_dim, 64, self.num_layers, bidirectional=True)
-#         self.gru = nn.GRU(embed_dim, 64, self.num_layers, bidirectional=True)
         self.fc = nn.Linear(embed_dim, num_class)
         self.init_weights()
 
