@@ -8,26 +8,6 @@ from torch.utils.data import Dataset
 from torchtext.data import get_tokenizer
 from torchtext.vocab import build_vocab_from_iterator
 
-#
-# class MyTextDataset(torch.utils.data.IterableDataset):
-#     def __init__(self, csv_path, train=True):
-#         super(MyTextDataset, self).__init__()
-#         name = 'train' if train else 'test'
-#         self.data_file = pd.read_csv(csv_path, encoding='utf-8', sep=',')
-#         self.labels = list(self.data_file["label"])
-#         self.texts = list(self.data_file["text"])
-#         print(f"the {name} dataset are {len(self.data_file.index)}'s numbers")
-#
-#     def __iter__(self):
-#         return iter(zip(self.labels, self.texts))
-#
-#     def __next__(self):
-#         return next(iter(zip(self.labels, self.texts)))
-#
-#     def __len__(self):
-#         return len(self.data_file.index)
-
-
 class TextDataset(Dataset):
 
     def __init__(self, csv_path, max_length, vocab, tokenizer, train=True):
@@ -106,19 +86,7 @@ if __name__ == "__main__":
     file_path = "../dataset"
     convert_dataset(file_path, file_path, train=True)
     convert_dataset(file_path, file_path, train=False)
-
-    # train_iter = MyTextDataset("../dataset/train.csv")
-    # train_dataset = iter(train_iter)
-    # train_loader = torch.utils.data.DataLoader(train_iter, batch_size=32)
-    #
-    # # print(len(train_iter))
-    # # print(next(train_dataset))
-    # # print(next(train_dataset))
-    # for i,j in train_loader:
-    #     print(i)
-    #     print(j)
-    #     break
-
+    
     tokenizer = get_tokenizer('basic_english')
     vocab = build_vocab_from_iterator(yield_tokens("../dataset/train.csv"), specials=["<unk>"], max_tokens=300, min_freq=3)
     vocab.set_default_index(vocab["<unk>"])
