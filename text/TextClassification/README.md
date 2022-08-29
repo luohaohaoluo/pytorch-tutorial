@@ -1,5 +1,7 @@
 # 文本分类，数据集基于ag_news
 
+**两个版本区别在于模型的创建，以及自己定义数据集的不同**
+
 # 1. preprogress.py
 运行 preprogress.py：将原始数据集做修改(把title和description和并为text，class index变为label)
 
