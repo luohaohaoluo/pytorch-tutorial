@@ -18,7 +18,7 @@
     - 'unk'是将不知道的单词统统标记为0（至少目前代码是这样规定的）
 3. 在学习率方面，官方推荐使用按步骤的学习率更新
 4. **在模型方面，使用的是nn.EmbeddingBag，而不是nn.Embedding**
-    - 自认为 nn.Embedding是处理等长的句子，因此在设置单词表的时候，只会建立出现次数最多词的表
-    - nn.EmbeddingBag可以根据offset处理不等长句子
+    - 自认为 nn.Embedding是一张查词表
+    - nn.EmbeddingBag是将查词表也embeding了，并在其基础上进行mode方式的操作
 5. lstm的output使用output[-1,:,:]还是直接output的问题
     - 可能根据输入的维度有关，如果是二维，是使用output[-1,:,:]，如果是将一个批次拉成一维了，那就是output即可
