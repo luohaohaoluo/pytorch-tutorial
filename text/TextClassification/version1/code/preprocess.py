@@ -27,47 +27,6 @@ class MyTextDataset(torch.utils.data.IterableDataset):
     def __len__(self):
         return len(self.data_file.index)
 
-
-class TextDataset(Dataset):
-
-    def __init__(self, csv_path, max_length, vocab, tokenizer, train=True):
-        super(TextDataset, self).__init__()
-        name = 'train' if train else 'test'
-        self.data_file = pd.read_csv(csv_path, encoding='utf-8', sep=',')
-        self.labels = list(self.data_file["label"])
-        self.texts = list(self.data_file["text"])
-        print(f"the {name} dataset are {len(self.data_file.index)}'s numbers")
-        self.max_length = max_length
-        self.vocab = vocab
-        self.tokenizer = tokenizer
-
-    def __getitem__(self, item):
-        label = self.labels[item]
-        text = self.texts[item]
-        # print(text)
-        label = int(label) - 1
-        text = self.vocab(self.tokenizer(text))
-        # print(len(text))
-        # print(text)
-        if self.max_length < len(text):
-            text = text[:self.max_length]
-        else:
-            distance = self.max_length - len(text)
-            text[len(text):] = [0] * distance
-        # print(len(text))
-        # print(text)
-        return torch.tensor(label, dtype=torch.int64), torch.LongTensor(text)
-
-    def __len__(self):
-        return len(self.data_file.index)
-
-
-# def yield_tokens(file_path):
-#     with io.open(file_path, encoding='utf-8') as f:
-#         for line in f:
-#             yield tokenizer(line)
-
-
 def convert_dataset(raw_path: str, new_path: str, train: bool = True):
     """
     convert the ag_news train.csv or test.csv(contain 3 columns:Class Index,Title,Description) \
@@ -118,13 +77,5 @@ if __name__ == "__main__":
         print(i)
         print(j)
         break
-
-    # tokenizer = get_tokenizer('basic_english')
-    # vocab = build_vocab_from_iterator(yield_tokens("../dataset/train.csv"), specials=["<unk>"], max_tokens=300, min_freq=3)
-    # vocab.set_default_index(vocab["<unk>"])
-    #
-    # train_dataset = TextDataset("../dataset/train.csv", 30, vocab, tokenizer)
-    # print(train_dataset[0])
-
 
 
