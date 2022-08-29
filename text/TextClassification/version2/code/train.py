@@ -93,7 +93,7 @@ if __name__ == "__main__":
                 val_acc += (output.argmax(1) == label).sum().item()
                 val_num += count
 
-        val_loss_all.append(val_loss/val_num)
+        val_loss_all.append(val_loss/len(val_loader))
         print("-" * 50)
         print(f"epoch:{epoch}: | loss: {val_loss_all[-1]:.4f}: | accuracy: {val_acc / val_num:.4%}")
         print("-" * 50)
