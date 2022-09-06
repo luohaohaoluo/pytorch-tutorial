@@ -119,10 +119,10 @@ def test_loop(dataloader, model, loss_fn, step):
 
 
 if __name__ == "__main__":
-    train_data = FashionMNIST(root="./dataset", train=True,
+    train_data = FashionMNIST(root="../dataset", train=True,
                               transform=torchvision.transforms.ToTensor(),
                               download=True)
-    test_data = FashionMNIST(root="./dataset", train=False,
+    test_data = FashionMNIST(root="../dataset", train=False,
                              transform=torchvision.transforms.ToTensor(),
                              download=False)
 
