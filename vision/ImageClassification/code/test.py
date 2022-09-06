@@ -41,7 +41,7 @@ def test_fn(model, dataset, device, label, *, index):
     draw_picture(dataset, label, index=index)
 
 if __name__ == "__main__":
-    test_data = FashionMNIST(root="./dataset", train=False,
+    test_data = FashionMNIST(root="../dataset", train=False,
                              transform=torchvision.transforms.ToTensor(),
                              download=False)
 
