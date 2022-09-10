@@ -1,4 +1,4 @@
-![PyTorch Logo](https://github.com/luo-hao-striver/pytorch-tutorial/blob/main/docs/imgs/pytorch-logo-dark.png#pic_center =60x60)
+![PyTorch Logo](https://github.com/luo-hao-striver/pytorch-tutorial/blob/main/docs/imgs/pytorch-logo-dark.png#pic_center)
 ****
 
 :rocket:[![pytorch_version](https://img.shields.io/badge/pytorch-%3E%3D1.12-red)](https://pytorch.org/get-started/locally/):airplane:
