@@ -6,10 +6,11 @@
 **由于还在不断学习，仓库的更新可能不及时，望见谅**
 
 # 内容介绍
+- 本教程重在实操如何完成深度学习基本任务（如目标检测、文本分类、机器翻译等），如果需要了解API可查阅[PytorchAPI](https://pytorch.org/docs/stable/index.html)
 - 本教程基于pycharm环境下编写，主要以preprocess.py、models.py、train.py、test.py四个文件构成code，模块化编写希望读者能够喜欢
 - 在学完基础内容后，也会更新一个jupyter版本的教程，敬请期待:smile:
-- **目前只更新了AE、Image、NLP内容，其余还未开始进行**
 - `docs`文件夹下存放的建仓库准备的东西（如：图片），读者可以不关心
+- **目前只更新了AE、Image、NLP内容，其余还未开始进行**
 
 :point_down::point_down::point_down::point_down::point_down::point_down:
 # 学习板块介绍
