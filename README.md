@@ -4,6 +4,7 @@
 :rocket:[![pytorch_version](https://img.shields.io/badge/pytorch-%3E%3D1.12-red)](https://pytorch.org/get-started/locally/):airplane:
 
 **由于还在不断学习，仓库的更新可能不及时，望见谅**
+
 本教程也会在作者的[Gitee](https://gitee.com/HAOZI318/pytorch-tutorial/tree/master)上同步更新，欢迎指正！
 
 
