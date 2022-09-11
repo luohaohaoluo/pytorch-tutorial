@@ -4,6 +4,8 @@
 :rocket:[![pytorch_version](https://img.shields.io/badge/pytorch-%3E%3D1.12-red)](https://pytorch.org/get-started/locally/):airplane:
 
 **由于还在不断学习，仓库的更新可能不及时，望见谅**
+本教程也会在作者的[Gitee](https://gitee.com/HAOZI318/pytorch-tutorial/tree/master)上同步更新，欢迎指正！
+
 
 # 内容介绍
 - 本教程重在实操如何完成深度学习基本任务（如目标检测、文本分类、机器翻译等），如果需要了解API可查阅[PytorchAPI](https://pytorch.org/docs/stable/index.html)
