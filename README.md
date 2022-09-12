@@ -11,7 +11,6 @@
 # 内容介绍
 - 本教程重在实操如何完成深度学习基本任务（如目标检测、文本分类、机器翻译等），如果需要了解API可查阅[PytorchAPI](https://pytorch.org/docs/stable/index.html)
 - 本教程基于pycharm环境下编写，主要以preprocess.py、models.py、train.py、test.py四个文件构成code，模块化编写希望读者能够喜欢
-- 在学完基础内容后，也会更新一个jupyter版本的教程，敬请期待:smile:
 - `docs`文件夹下存放的建仓库准备的东西（如：图片），读者可以不关心
 - **每个任务都会创建`code`和`dataset`两个文件夹，分别存放代码和对应任务数据集**
 - **作者使用的数据集都是方便获取的，如果实在搜索不到，可以与我联系**
