@@ -27,7 +27,7 @@
   - [基于VOC2012数据集的语义分割任务](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/vision/VOC2012Task/SemanticSegmentation)
 
 
-## NLP
+## 自然语言处理（NLP）
 - [text文件夹](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/text)
   - [基于IMDB的文本二分类任务](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/text/IMDBTextClassification)
     - 该任务使用了glove预训练词向量
