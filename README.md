@@ -45,6 +45,11 @@
 - [VIT文件夹](https://github.com/luohao318/pytorch-tutorial/tree/main/VIT)
   - [传统VIT](https://github.com/luohao318/pytorch-tutorial/tree/main/VIT/VIT)
 
+## trick
+关于训练过拟合的小技巧（如：交叉验证）
+- [trick文件夹](https://github.com/luohao318/pytorch-tutorial/tree/main/trick)
+  - [CrossValidation](https://github.com/luohao318/pytorch-tutorial/tree/main/trick/CrossValidation)
+
 <!--
 
 ## 注意力机制
