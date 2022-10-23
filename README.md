@@ -3,13 +3,15 @@
 
 :rocket:[![pytorch_version](https://img.shields.io/badge/pytorch-%3E%3D1.12-red)](https://pytorch.org/get-started/locally/):airplane:
 
+
 **由于还在不断学习，仓库的更新可能不及时，望见谅**
 
-**以下内容均本人为学习深度学习个人创建，如果有什么欠缺之处，欢迎来扰.QQ：1091627587！**
+**以下内容均本人为学习深度学习个人创建，如果有什么欠缺之处，欢迎来扰！QQ：1091627587！**
 
 
 # 内容介绍
 - 本教程重在实操如何完成深度学习基本任务（如目标检测、文本分类、机器翻译等），如果需要了解API可查阅[PytorchAPI](https://pytorch.org/docs/stable/index.html)
+- 该仓库主要存放代码，读者可以根据阅读代码来理解相关模型或者任务的具体实现，讲解部分并未开始，I will do it in the future！
 - 本教程基于pycharm环境下编写，主要以preprocess.py、models.py、train.py、test.py四个文件构成code，模块化编写希望读者能够喜欢
 - `docs`文件夹下存放的建仓库准备的东西（如：图片），读者可以不关心
 - **每个任务都会创建`code`和`dataset`两个文件夹，分别存放代码和对应任务数据集**
