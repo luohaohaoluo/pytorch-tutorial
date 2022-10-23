@@ -34,16 +34,18 @@
   - [基于Ag_news的本文多分类任务](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/text/TextClassification)
     - 该任务有使用官方的nn.EmbeddingBag，和自己理解的nn.Embedding两个版本
 
-<!--
-## 自编码器（AE）
-- [AutoEncoder](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/AutoEncoder)
+## 生成式对抗网络（GAN）
+- [GAN](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/GAN)
+  - [传统GAN的学习](https://github.com/luohao318/pytorch-tutorial/tree/main/GAN/GAN)
 
+<!--
 
 ## 注意力机制
 - [Attention](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/Attention)
 
-## 生成式对抗网络（GAN）
-- [GAN](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/GAN)
+## 自编码器（AE）
+- [AutoEncoder](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/AutoEncoder)
+
 
 ## 视频（video）
 - 暂时未开始
