@@ -37,9 +37,13 @@
     - 该任务有使用官方的nn.EmbeddingBag，和自己理解的nn.Embedding两个版本
 
 ## 生成式对抗网络（GAN）
-- [GAN](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/GAN)
+- [GAN文件夹](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/GAN)
   - [传统GAN的学习](https://github.com/luohao318/pytorch-tutorial/tree/main/GAN/GAN)
     - 使用传统GAN对MNIST数据集进行图像再生成
+    
+## VIT（Vision Transformer）
+- [VIT文件夹](https://github.com/luohao318/pytorch-tutorial/tree/main/VIT)
+  - [传统VIT](https://github.com/luohao318/pytorch-tutorial/tree/main/VIT/VIT)
 
 <!--
 
