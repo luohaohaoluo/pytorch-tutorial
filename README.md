@@ -37,6 +37,7 @@
 ## 生成式对抗网络（GAN）
 - [GAN](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/GAN)
   - [传统GAN的学习](https://github.com/luohao318/pytorch-tutorial/tree/main/GAN/GAN)
+    - 使用传统GAN对MNIST数据集进行图像再生成
 
 <!--
 
