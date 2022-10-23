@@ -27,6 +27,9 @@
 - [vison文件夹](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/vision)
   - [基于FashionMNIST多分类任务](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/vision/ImageClassification)
   - [基于VOC2012数据集的语义分割任务](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/vision/VOC2012Task/SemanticSegmentation)
+  - [基于VOC2007数据集的实例分割任务](https://github.com/luohao318/pytorch-tutorial/tree/main/vision/VOC2007Task/InstanceSegmentation)
+  - [基于VOC2007数据集的目标检测任务](https://github.com/luohao318/pytorch-tutorial/tree/main/vision/VOC2007Task/ObjectDectection)
+    - 支持图片和视频的动态监测
 
 
 ## 自然语言处理（NLP）
