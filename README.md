@@ -52,14 +52,14 @@
 关于训练过拟合的小技巧（如：交叉验证）
 - [trick文件夹](https://github.com/luohao318/pytorch-tutorial/tree/main/trick)
   - [CrossValidation](https://github.com/luohao318/pytorch-tutorial/tree/main/trick/CrossValidation)
+ 
+ ## 自编码器（AE）
+- [AutoEncoder](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/AutoEncoder)
 
 <!--
 
 ## 注意力机制
 - [Attention](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/Attention)
-
-## 自编码器（AE）
-- [AutoEncoder](https://github.com/luo-hao-striver/pytorch-tutorial/tree/main/AutoEncoder)
 
 
 ## 视频（video）
